@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Compass</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Career Compass</h1>
+        <p>Find a career that aligns with your skills, interests, and values.</p>
+
+        <div class="progress-container">
+            <span id="progress-label">0% Complete</span>
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div id="questionnaire">
+            <h2 id="question"></h2>
+            <div class="options">
+                <button id="optionA" class="option-btn">Option A</button>
+                <button id="optionB" class="option-btn">Option B</button>
+                <button id="back-btn" class="option-btn hidden">Back</button>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Your Suggested Career:</h2>
+            <h3 id="career-title"></h3>
+            <p id="career-description"></p>
+            <p><strong>Requirements:</strong> <span id="career-requirements"></span></p>
+
+            <h2>Your Answers:</h2>
+            <ul id="answers-summary"></ul>
+            <a class="btn" href="index.html">Return to Homepage</a>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+<footer>
+    <p>Career Compass | Andrew Law | 2024</p>
+</footer>
+</html>
