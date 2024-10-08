@@ -143,3 +143,27 @@ footer {
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .career-list {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .progress-container {
+        height: 15px;
+    }
+}
