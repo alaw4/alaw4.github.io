@@ -34,17 +34,17 @@ const careerCategories = {
 const careerSummaries = {
     creative: {
         title: "Creative Career",
-        description: "You are suited for creative careers like art, design, or writing. Examples include: Graphic Designer, Copywriter, Illustrator, Fashion Designer, Photographer, Animator.",
-        requirements: "Skills in design, storytelling, and open-minded thinking."
+        description: "You are suited for creative careers like art, design, or writing. Examples include: Musician, Graphic Designer, Illustrator, Fashion Designer, Photographer, Artist.",
+        requirements: "Skills in design, storytelling, and/or out-of-the-box thinking."
     },
     analytical: {
         title: "Analytical Career",
-        description: "You excel in data-driven careers like finance or engineering. Examples include: Data Analyst, Financial Analyst, Economist, Statistician, Mechanical Engineer, Actuary.",
-        requirements: "Proficiency in mathematics, logical thinking, and attention to detail."
+        description: "You excel in data-driven careers like finance or engineering. Examples include: Data Analyst, Financial Analyst, Economist, Engineer, Actuary.",
+        requirements: "Proficiency in analytics, logical thinking, and attention to detail."
     },
     peopleOriented: {
         title: "People-Oriented Career",
-        description: "You are great at careers that involve helping others, like teaching or healthcare. Examples include: Teacher, Social Worker, Nurse, Human Resources Specialist, Psychologist, Counselor.",
+        description: "You are suited for careers that involve helping others, like teaching or healthcare. Examples include: Teacher, Social Worker, Nurse, Human Resources Specialist, Psychologist, Counselor.",
         requirements: "Strong interpersonal skills and a desire to help others."
     },
     technical: {
