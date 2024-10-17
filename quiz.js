@@ -54,7 +54,7 @@ const careerSummaries = {
     },
     entrepreneurial: {
         title: "Entrepreneurial Career",
-        description: "You are suited for entrepreneurial ventures in business or startups. Startup Founder, Business Owner, Venture Capitalist, Product Manager, Business Consultant.",
+        description: "You are suited for entrepreneurial ventures in business or startups. Examples include: Startup Founder, Business Owner, Venture Capitalist, Product Manager, Business Consultant.",
         requirements: "Leadership, risk-taking, and creativity."
     }
 };
