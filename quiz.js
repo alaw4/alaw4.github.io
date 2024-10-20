@@ -1,3 +1,4 @@
+// quiz questions
 const questions = [
     "Do you prefer: (A)working alone or (B)in a team?",
     "Do you enjoy: (A)creative tasks or (B)analytical tasks?",
@@ -78,9 +79,11 @@ function updateProgressBar() {
     const progressPercent = Math.min((currentQuestionIndex / questions.length) * 100, 100);
 
     progressBar.style.width = `${progressPercent}%`;
-    progressLabel.textContent = `${currentQuestionIndex} of ${questions.length} questions answered (${Math.round(progressPercent)}% complete)`;  // Update progress label
+    progressLabel.textContent = `${currentQuestionIndex} of ${questions.length} questions answered (${Math.round(progressPercent)}% complete)`;  
+    // update progress label
 }
 
+//introduce back button only if not on the first question
 function showQuestion(index) {
     questionElement.textContent = questions[index];
     updateProgressBar();
@@ -92,6 +95,7 @@ function showQuestion(index) {
     }
 }
 
+//logic to coordinate answers with a career category
 function processAnswer(answer) {
     answers.push(answer);
 
@@ -192,7 +196,7 @@ function processAnswer(answer) {
         showQuestion(currentQuestionIndex);
     } else {
         updateProgressBar();
-        showResult();
+        showResult(); //calls showResult() function to display the result
     }
 }
 
@@ -217,7 +221,7 @@ function showResult() {
         answers.forEach((answer, index) => {
             const listItem = document.createElement('li');
             listItem.textContent = `Question ${index + 1}: ${questions[index]} - You answered: ${answer === 'A' ? 'Option A' : 'Option B'}`;
-            answersSummaryElement.appendChild(listItem);
+            answersSummaryElement.appendChild(listItem); //displays your answers for the quiz that led to the result
         });
 
         document.getElementById('questionnaire').classList.add('hidden');
@@ -250,6 +254,7 @@ backButton.addEventListener('click', function () {
     }
 });
 
+//reset the quiz to start from the beginning with no stored values in the answers array
 document.getElementById('restart-btn').addEventListener('click', function () {
     currentQuestionIndex = 0;
     answers = [];

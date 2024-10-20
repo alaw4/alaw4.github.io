@@ -21,4 +21,4 @@
 
 ## Demo
 
-You can access the live demo of the Career Compass web application at (https://github.com/alaw4/alaw4.github.io)
+You can access the live demo of the Career Compass web application at (https://alaw4.github.io)

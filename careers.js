@@ -1,1 +1,1 @@
-console.log("Careers page loaded");
+console.log("Careers page loaded"); //test that careers page loads correctly (console print only)
